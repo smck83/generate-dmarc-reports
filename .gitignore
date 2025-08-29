@@ -1,0 +1,4 @@
+.env
+/archive
+.env.example
+build-and-run.ps1

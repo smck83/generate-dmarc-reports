@@ -1,0 +1,22 @@
+services:
+  dmarc-reporter:
+    image: ghcr.io/smck83/generate-dmarc-reports:latest
+    container_name: dmarc-reporter
+    restart: unless-stopped
+    environment:
+      ORG_NAME: ExampleOrg
+      REPORT_DOMAIN: yourdomain.com
+      MAIL_FROM: sender-of-report@example.org
+      MAIL_TO: your-rua-recipient-address
+      SMTP_HOST: <smtp-serverr
+      SMTP_PORT: 587
+      SMTP_USER: <smtp-username>
+      SMTP_PASS: <smtp-password>
+      USE_SSL: "false"
+      USE_STARTTLS: "true"
+      MIN_PER_HOUR: 100
+      MAX_PER_HOUR: 300
+      ONCE: "false"
+      TZ: Australia/Sydney
+      SPF_PASS_INCLUDES: "sendgrid.net mailgun.org au._netblocks.mimecast.com"
+      SPF_FAIL_INCLUDES: "email.freshdesk.com spf.protection.outlook.com"
