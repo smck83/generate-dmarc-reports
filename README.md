@@ -27,7 +27,7 @@ This tool is designed to **populate DMARC reporting solutions with demo/test dat
 
 ## Example Use Case
 
-You’ve deployed a DMARC reporting analyser (e.g. Mimecast DMARC Analyzer, commercial or self-hosted). You want to:  
+You’ve deployed a DMARC reporting analyser (e.g. commercial or self-hosted). You want to:  
 
 - **Demonstrate** the reporting dashboards with live-looking data.  
 - **Stress-test** ingestion pipelines with varying report volumes.  
