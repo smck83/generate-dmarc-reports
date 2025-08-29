@@ -57,9 +57,10 @@ docker compose logs -f dmarc-reporter
 
 If using Portainer stacks:  
 
-- Paste the above Compose into the **Web editor**.  
-- In the **Environment variables** tab, add the variables directly.  
-- You don’t need `env_file:` in Portainer unless you maintain a `.env` on the Docker host.
+- Paste the contents of `docker-compose.yaml` into the **Web editor**.  
+- Adjust **Environment variables** , to reflect your desired configuration.
+- Click **Deploy the stack**
+
 
 ---
 
