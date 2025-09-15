@@ -104,7 +104,7 @@ If using Portainer stacks:
 For a quick smoke test:
 
 ```bash
-docker run --rm   -e ORG_NAME=McKellarCo   -e REPORT_DOMAIN=mck.la   -e MAIL_FROM=dmarc-reports@mck.la   -e MAIL_TO=you@example.com   -e SMTP_HOST=smtp.example.com   -e SMTP_PORT=587   -e SMTP_USER=...   -e SMTP_PASS=...   -e ONCE=true   ghcr.io/smck83/generate-dmarc-reports:latest
+docker run --rm   -e ORG_NAME=ACMEorg   -e REPORT_DOMAIN=mck.la   -e MAIL_FROM=dmarc-reports@mck.la   -e MAIL_TO=you@example.com   -e SMTP_HOST=smtp.example.com   -e SMTP_PORT=587   -e SMTP_USER=...   -e SMTP_PASS=...   -e ONCE=true   ghcr.io/smck83/generate-dmarc-reports:latest
 ```
 
 You’ll get a single `.xml.gz` report in your mailbox.
